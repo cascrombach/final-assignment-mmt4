@@ -1,0 +1,1814 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: montserrat;
+    font-size: 1.4em;
+}
+
+p {
+    font-family: montserrat;
+    color: white;
+}
+
+#navbar {
+    width: 100%;
+    height: 60px;
+    padding: 20px 10px;
+    background: white;
+    z-index: 2;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#logo1 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 8%;
+}
+
+#logo2 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 8%;
+    display: none;
+}
+
+#navbar nav {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 46%;
+}
+
+#navbar a {
+    color: blue;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 14%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.color-overlay {
+    width: 100%;
+    height: 100%;
+    background: blue;
+    opacity: .8;
+    position: absolute;
+}
+
+.hero-image {
+    background-image: url("../img/hero_image@2x.png");
+    height: 700px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 100px;
+    z-index: -1;
+}
+
+.hero-text h1 {
+    position: absolute;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 3.8em;
+    z-index: 1;
+    padding: 10px;
+    width: 100%;
+    top: 15%;
+    left: 65%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h2 {
+    position: absolute;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 3.8em;
+    z-index: 1;
+    padding: 10px;
+    width: 100%;
+    top: 29%;
+    left: 65%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text p {
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    z-index: 1;
+    max-width: 52%;
+    top: 50%;
+    left: 41%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    line-height: 30px;
+}
+
+/* ------------------------------------- */
+
+#container {
+    width: 72%;
+    background: white;
+    margin: 0 auto;
+    padding: 50px;
+    margin-top: -180px;
+    z-index: 4;
+}
+
+#playlist {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #1D00FF;
+    margin-bottom: 5vw;
+}
+
+#accordion h3 {
+    position: relative;
+    height: 80px;
+    font-size: 1.2em;
+    line-height: 50px;
+    padding-left: 60px;
+}
+
+.ui-accordion .ui-accordion-content {
+    border-radius: 0;
+    padding: 0;
+    max-height: 750px;
+    position: relative;
+}
+
+.ui-accordion .ui-accordion-header {
+    margin: 0;
+    border-radius: 0;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.ui-state-default {
+    color: #4B4B4B;
+    font-weight: bold;
+}
+
+.ui-state-active {
+    font-weight: bold;
+    border: 1px solid rgb(29, 0, 255);
+    color: rgb(29, 0, 255);
+}
+
+.acc-dicht {
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.acc-dicht2 {
+    display: none;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.acc-open {
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.ui-accordion-header .acc-open {
+    display: none;
+}
+
+.ui-accordion-header-active .acc-open {
+    display: inline;
+}
+
+.ui-accordion-header .acc-dicht {
+    display: inline;
+}
+
+.ui-accordion-header-active .acc-dicht {
+    display: none;
+}
+
+.acc-button {
+    float: right;
+    font-size: 0.9em;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    border-radius: 30px;
+    border: 0px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.button-intro {
+    background-color: rgb(255, 175, 227);
+    color: rgb(204, 0, 133);
+    width: 100px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.button-workshop {
+    background-color: rgb(209, 231, 255);
+    color: rgb(29, 0, 255);
+    width: 150px;
+    height: 42px;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.button-download {
+    text-align: center;
+    display: inline-block;
+    float: right;
+    font-size: 0.9em;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    width: 195px;
+    height: 42px;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.button-download img {
+    float: left;
+    margin-left: 10px;
+}
+
+.button-download p {
+    margin-top: 3px;
+}
+
+.videoTitle {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+    margin: 20px;
+    display: none;
+}
+
+.toggle {
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/play.svg);
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    padding: 0;
+    position: absolute;
+    z-index: 2;
+    top: 46%;
+    left: 45%;
+    display: none;
+}
+
+.pause {
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/pause.svg);
+    background-size: contain;
+}
+
+.rewind {
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/rewind.svg);
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    padding: 0;
+    position: absolute;
+    z-index: 3;
+    top: 48%;
+    left: 36%;
+    display: none;
+}
+
+.vinkje1 {
+    width: 86px;
+    height: 40px;
+    background-image: url(../img/vinkje1.svg);
+    background-color: transparent;
+    background-size: auto;
+    background-repeat: no-repeat;
+    border: none;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    display: none;
+}
+
+.vinkje2 {
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/vinkje2.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    z-index: 3;
+    top: 49%;
+    right: 36%;
+    display: none;
+}
+
+.videoContainer:hover .videoTitle {
+    display: block;
+}
+
+.videoContainer:hover .rewind {
+    display: block;
+}
+
+.videoContainer:hover .toggle {
+    display: block;
+}
+
+.videoContainer:hover .vinkje2 {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    background: blue;
+    color: white;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 10px 20px 0px 30px;
+    width: 40%;
+    height: 250px;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.close {
+    color: white;
+    float: right;
+    padding: 8px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.modal-content p {
+    padding-top: 100px;
+}
+
+/* ------------------------------------------ */
+
+#support {
+    height: 850px;
+    margin-top: 120px;
+}
+
+#support h1 {
+    max-width: 75%;
+    color: blue;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 4em;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: left;
+}
+
+#support h2 {
+    max-width: 75%;
+    color: blue;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 4em;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: left;
+}
+
+#support h3 {
+    max-width: 75%;
+    color: blue;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    font-size: 1.5em;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    width: 500px;
+    float: left;
+    margin-left: 12%;
+    margin-top: 90px;
+}
+
+#contact1 img {
+    float: left;
+}
+
+#contact1 h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    margin-left: 38%;
+    margin-top: 50px;
+}
+
+#contact1 h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: black;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 0.77em;
+    margin-left: 38%;
+    margin-top: 5px;
+}
+
+#contact1 button {
+    margin-left: 38%;
+    border-style: none;
+    margin-top: 10px;
+    background: black;
+    width: 125px;
+    height: 38px;
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 0.7em;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#contact2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    width: 500px;
+    float: right;
+    margin-right: 12%;
+    margin-top: 90px;
+}
+
+#contact2 img {
+    float: left;
+}
+
+#contact2 h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    margin-left: 38%;
+    margin-top: 50px;
+}
+
+#contact2 h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 0.77em;
+    margin-left: 38%;
+    margin-top: 5px;
+}
+
+#contact2 button {
+    margin-left: 38%;
+    border-style: none;
+    margin-top: 10px;
+    background: black;
+    width: 125px;
+    height: 38px;
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 0.7em;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#contact3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    width: 500px;
+    float: left;
+    margin-left: 12%;
+    margin-top: 70px;
+}
+
+#contact3 img {
+    float: left;
+}
+
+#contact3 h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    margin-left: 38%;
+    margin-top: 50px;
+}
+
+#contact3 h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 0.77em;
+    margin-left: 38%;
+    margin-top: 5px;
+}
+
+#contact3 button {
+    margin-left: 38%;
+    border-style: none;
+    margin-top: 10px;
+    background: black;
+    width: 125px;
+    height: 38px;
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 0.7em;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#contact4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    width: 500px;
+    float: right;
+    margin-right: 12%;
+    margin-top: 70px;
+}
+
+#contact4 img {
+    float: left;
+}
+
+#contact4 h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    margin-left: 38%;
+    margin-top: 50px;
+}
+
+#contact4 h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 0.77em;
+    margin-left: 38%;
+    margin-top: 5px;
+}
+
+#contact4 button {
+    margin-left: 38%;
+    border-style: none;
+    margin-top: 10px;
+    background: black;
+    width: 125px;
+    height: 38px;
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 0.7em;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.color-overlay2 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#FFAFE3, #CC0085);
+    opacity: .7;
+    position: absolute;
+}
+
+#roze {
+    position: relative;
+    background-image: url("../img/expert-img@2x.png");
+    height: 620px;
+    max-width: 100%;
+    margin-top: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#roze-text h1 {
+    position: absolute;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 4em;
+    z-index: 1;
+    width: 45%;
+    top: 25%;
+    left: 60%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#roze-text h2 {
+    position: absolute;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 4em;
+    z-index: 1;
+    width: 50%;
+    top: 40%;
+    left: 56%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#roze-text p {
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;
+    z-index: 1;
+    top: 59%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#roze button {
+    position: absolute;
+    background: blue;
+    border-style: none;
+    z-index: 1;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    height: 65px;
+    width: 270px;
+    top: 75%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#roze button h1 {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #FFAFE3;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    background-color: black;
+    bottom: 0;
+    height: 100px;
+    position: relative;
+}
+
+.switch-tekst {
+    position: absolute;
+    border: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1em;
+    top: 40%;
+    left: 80%;
+}
+
+.switchknop {
+    position: absolute;
+    background: white;
+    border: 2px solid #00151f;
+    width: 45px;
+    height: 20px;
+    left: 90%;
+    top: 35%;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.switchknop.active {
+    background: #00151f;
+    border: 2px solid white;
+}
+
+.switchknop:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #00151f;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.switchknop.active:before {
+    left: 27px;
+    background: white;
+}
+
+body.night {
+    background: black;
+}
+
+body.night .content #navbar a, body.night .content #support h1, body.night .content #support h2, body.night .content #support h3, body.night .content #support h4, body.night .content #support h5, body.night .content .container2 h3, body.night .content #playlist {
+    color: white;
+}
+
+body.night .content #support button {
+    background: white;
+}
+
+body.night .content #support button {
+    color: black;
+}
+
+body.night .content #navbar, body.night .content #container, body.night .content .videoContainer, body.night .content .container2, body.night .content .ui-accordion .ui-accordion-header {
+    background: black;
+}
+
+body.night .content #logo1 {
+    display: none;
+}
+
+body.night .content #logo2 {
+    display: inline;
+}
+
+body.night .content .acc-dicht {
+    display: none;
+}
+
+body.night .content .acc-dicht2 {
+    display: inline;
+}
+
+body.night .content .ui-accordion-header-active .acc-dicht2 {
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {
+    #support {
+        margin-top: 80px;
+    }
+    #contact1 {
+        margin-left: 5%;
+    }
+    #contact2 {
+        margin-right: 15%;
+        width: 400px;
+    }
+    #contact3 {
+        margin-left: 5%;
+        margin-top: 80px;
+    }
+    #contact4 {
+        margin-right: 15%;
+        width: 400px;
+    }
+    #contact2 h4 {
+        margin-left: 45%;
+        margin-top: 50px;
+    }
+    #contact2 h5 {
+        margin-left: 45%;
+        margin-top: 5px;
+    }
+    #contact2 button {
+        margin-left: 45%;
+    }
+    #contact4 h4 {
+        margin-left: 45%;
+        margin-top: 50px;
+    }
+    #contact4 h5 {
+        margin-left: 45%;
+        margin-top: 5px;
+    }
+    #contact4 button {
+        margin-left: 45%;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .hero-text h1 {
+        font-size: 3em;
+    }
+    .hero-text h2 {
+        font-size: 3em;
+    }
+    .hero-text p {
+        font-size: 1em;
+    }
+    #container {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: -100px;
+        z-index: 4;
+        position: inherit;
+        padding-bottom: 50px;
+        font-size: 0.7em;
+    }
+    .button-intro {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 120px;
+        height: 45px;
+        width: 90px;
+    }
+    #accordion h3 {
+        height: 80px;
+        font-size: 1.5em;
+        display: block;
+        padding: 20px;
+        width: 94.7%;
+    }
+    .toggle {
+        height: 70px;
+        width: 70px;
+        left: 50%;
+        top: 43%;
+    }
+    .rewind {
+        height: 65px;
+        width: 65px;
+        left: 39%;
+        top: 44%;
+    }
+    .vinkje2 {
+        height: 65px;
+        width: 65px;
+        right: 30%;
+        top: 44%;
+    }
+    .vinkje1 {
+        height: 65px;
+        width: 85px;
+        top: 30px;
+    }
+    .button-download {
+        display: block;
+        margin-top: 10px;
+        margin-right: 20px;
+        width: 145px;
+        height: 60px;
+        text-align: center;
+    }
+    .button-workshop {
+        margin-top: 25px;
+        margin-bottom: 20px;
+        width: 140px;
+        height: 40px;
+    }
+    .button-download img {
+        float: none;
+        margin: 0;
+    }
+    #support {
+        margin-top: 80px;
+        margin: 0 auto;
+        height: 850px;
+    }
+    #support h1 {
+        max-width: 90%;
+        font-size: 3.2em;
+        margin-left: 12%;
+    }
+    #support h2 {
+        max-width: 90%;
+        font-size: 3.2em;
+        margin-left: 12%;
+        margin-bottom: 50px;
+    }
+    #support h3 {
+        margin-top: 120px;
+    }
+    #roze-text h1 {
+        text-align: center;
+        font-size: 3.5em;
+        width: 80%;
+        left: 50%;
+    }
+    #roze-text h2 {
+        font-size: 3.5em;
+        text-align: center;
+        width: 900%;
+        left: 50%;
+        top: 40%;
+    }
+    #roze-text p {
+        text-align: center;
+        font-size: 1.1em;
+        width: 80%;
+        left: 50%;
+        top: 55%;
+    }
+    .switchknop {
+        left: 90%;
+    }
+    .switch-tekst {
+        left: 75%;
+    }
+    #contact1 {
+        margin-top: 50px;
+        margin-left: 5%;
+    }
+    #contact2 {
+        margin-top: 50px;
+        margin-right: 5%;
+    }
+    #contact3 {
+        margin-left: 5%;
+        margin-top: 50px;
+    }
+    #contact4 {
+        margin-top: 50px;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 1052px) {
+    #container {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: -100px;
+        z-index: 4;
+        position: inherit;
+        padding-bottom: 50px;
+        font-size: 0.7em;
+    }
+    .button-intro {
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 100px;
+        height: 35px;
+        width: 80px;
+    }
+    #accordion h3 {
+        height: 80px;
+        font-size: 1.2em;
+        display: block;
+        padding: 20px;
+        width: 90.7%;
+    }
+    .toggle {
+        height: 60px;
+        width: 60px;
+        left: 50%;
+        top: 43%;
+    }
+    .rewind {
+        height: 50px;
+        width: 50px;
+        left: 39%;
+        top: 44%;
+    }
+    .vinkje2 {
+        height: 40px;
+        width: 40px;
+        right: 30%;
+        top: 44%;
+    }
+    .vinkje1 {
+        height: 65px;
+        width: 85px;
+        top: 30px;
+    }
+    .button-download {
+        display: block;
+        margin-top: 15px;
+        margin-right: 20px;
+        width: 110px;
+        height: 50px;
+        text-align: center;
+    }
+    .button-workshop {
+        margin-top: 25px;
+        width: 100px;
+        height: 40px;
+        margin-right: 5px;
+    }
+    .button-download img {
+        float: none;
+        margin: 0;
+    }
+    #support {
+        width: 100%;
+        margin: 0 auto;
+        height: 1200px;
+    }
+    #contact1 {
+        margin-top: 50px;
+        margin-left: 5%;
+    }
+    #contact2 {
+        margin-top: 50px;
+        margin-right: 5%;
+    }
+    #contact3 {
+        margin-left: 5%;
+        margin-top: 50px;
+    }
+    #contact4 {
+        margin-top: 50px;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    #support {
+        width: 100%;
+        margin: 0 auto;
+        height: 800px;
+    }
+    #contact1 {
+        margin-top: 50px;
+        margin-left: 3%;
+    }
+    #contact2 {
+        margin-top: 50px;
+        margin-right: 3%;
+    }
+    #contact3 {
+        margin-left: 3%;
+        margin-top: 50px;
+    }
+    #contact4 {
+        margin-top: 50px;
+        margin-right: 3%;
+    }
+}
+
+@media screen and (max-width: 974px) {
+    #support {
+        width: 100%;
+        margin: 0 auto;
+        height: 800px;
+    }
+    #contact1 {
+        margin-top: 50px;
+        margin-left: 2%;
+    }
+    #contact2 {
+        margin-top: 50px;
+        margin-right: 2%;
+    }
+    #contact3 {
+        margin-top: 50px;
+        margin-left: 2%;
+    }
+    #contact4 {
+        margin-top: 50px;
+        margin-right: 2%;
+    }
+    .switchknop {
+        left: 85%;
+    }
+    .switch-tekst {
+        left: 68%;
+    }
+}
+
+@media screen and (max-width: 954px) {
+    #support {
+        margin-top: 80px;
+        height: 1200px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    #contact1 {
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+    #contact2 {
+        float: left;
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+    #contact3 {
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+    #contact4 {
+        float: left;
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    #navbar nav {
+        list-style-type: none;
+        text-align: center;
+        margin-top: 25px;
+        margin-left: 20%;
+    }
+    .hero-image {
+        height: 650px;
+    }
+    .hero-text h1 {
+        text-align: center;
+        max-width: 80%;
+        left: 50%;
+        font-size: 2.5em;
+    }
+    .hero-text h2 {
+        text-align: center;
+        max-width: 80%;
+        top: 26%;
+        left: 50%;
+        font-size: 2.5em;
+    }
+    .hero-text p {
+        text-align: center;
+        max-width: 80%;
+        left: 50%;
+        top: 50%;
+        font-size: 1em;
+    }
+    #support {
+        margin-top: 80px;
+        height: 1150px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    #support h1 {
+        max-width: 90%;
+        font-size: 2.5em;
+        margin-left: 12%;
+    }
+    #support h2 {
+        max-width: 90%;
+        font-size: 2.5em;
+        margin-left: 12%;
+        margin-bottom: 50px;
+    }
+    #support h3 {
+        margin-top: 100px;
+    }
+    #contact1 {
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+    #contact2 {
+        float: left;
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+    #contact3 {
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+    #contact4 {
+        float: left;
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+    .switchknop {
+        left: 85%;
+    }
+    .switch-tekst {
+        left: 65%;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    #container {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: -100px;
+        z-index: 4;
+        position: inherit;
+        padding-bottom: 50px;
+        font-size: 0.7em;
+    }
+    .button-intro {
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 40px;
+        height: 40px;
+        width: 70px;
+    }
+    #accordion h3 {
+        height: 130px;
+        font-size: 1em;
+        display: block;
+        padding: 20px;
+        width: 92.3%;
+    }
+    .toggle {
+        height: 50px;
+        width: 50px;
+        left: 50%;
+        top: 43%;
+    }
+    .rewind {
+        height: 45px;
+        width: 45px;
+        left: 39%;
+        top: 44%;
+    }
+    .vinkje2 {
+        height: 45px;
+        width: 45px;
+        right: 30%;
+        top: 40%;
+    }
+    .vinkje1 {
+        height: 65px;
+        width: 85px;
+        top: 30px;
+    }
+    .button-download {
+        display: block;
+        margin-top: 10px;
+        margin-right: 15px;
+        width: 95px;
+        height: 50px;
+        text-align: center;
+    }
+    .button-workshop {
+        margin-top: 80px;
+        margin-bottom: 20px;
+        width: 90px;
+        height: 30px;
+    }
+    .button-download img {
+        float: none;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #navbar nav {
+        list-style-type: none;
+        text-align: center;
+        margin-top: 25px;
+        margin-left: 30%;
+    }
+    #navbar a {
+        font-size: 1em;
+        margin-right: 8%;
+        font-size: 0.8em;
+    }
+    .hero-text h1 {
+        text-align: center;
+        max-width: 85%;
+        left: 50%;
+        top: 18%;
+        font-size: 2em;
+    }
+    .hero-text h2 {
+        text-align: center;
+        max-width: 85%;
+        top: 32%;
+        left: 50%;
+        font-size: 2em;
+    }
+    .hero-image {
+        height: 500px;
+    }
+    .hero-text p {
+        text-align: center;
+        max-width: 80%;
+        left: 50%;
+        top: 58%;
+        font-size: 0.7em;
+    }
+    #container {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: -100px;
+        z-index: 4;
+        position: inherit;
+        padding-bottom: 50px;
+        font-size: 0.7em;
+    }
+    .toggle {
+        height: 40px;
+        width: 40px;
+        left: 50%;
+        top: 43%;
+    }
+    .rewind {
+        height: 35px;
+        width: 35px;
+        left: 39%;
+        top: 44%;
+    }
+    .vinkje2 {
+        height: 35px;
+        width: 35px;
+        right: 30%;
+        top: 40%;
+    }
+    .vinkje1 {
+        height: 40px;
+        width: 85px;
+        top: 50px;
+    }
+    .button-intro {
+        text-align: center;
+        margin-top: -50px;
+        margin-left: 150px;
+        height: 33px;
+        width: 60px;
+    }
+    .vinkje1 {
+        margin-top: 35px;
+        margin-left: 30px;
+        height: 30px;
+        width: 50px;
+    }
+    #accordion h3 {
+        height: 130px;
+        font-size: 0.9em;
+        width: 87.3%;
+    }
+    .button-download {
+        display: block;
+        margin-top: 10px;
+        margin-right: 20px;
+        width: 85px;
+        height: 43px;
+        text-align: center;
+    }
+    .button-workshop {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 80px;
+        height: 30px;
+    }
+    .button-download img {
+        float: none;
+        margin: 0;
+    }
+    .video-js {
+        height: 175px;
+    }
+    #support {
+        margin-top: 80px;
+        height: 1150px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    #support h1 {
+        max-width: 90%;
+        font-size: 2em;
+        margin-left: 12%;
+    }
+    #support h2 {
+        max-width: 90%;
+        font-size: 2em;
+        margin-left: 12%;
+        margin-bottom: 50px;
+    }
+    #contact1 {
+        margin-left: 11%;
+        margin-top: 50px;
+    }
+    #contact2 {
+        float: left;
+        margin-left: 11%;
+        margin-top: 50px;
+    }
+    #contact3 {
+        margin-left: 11%;
+        margin-top: 50px;
+    }
+    #contact4 {
+        float: left;
+        margin-left: 11%;
+        margin-top: 50px;
+    }
+    #roze {
+        height: 400px;
+        width: 100%;
+    }
+    #roze-text h1 {
+        text-align: center;
+        font-size: 2.5em;
+        width: 80%;
+        left: 50%;
+    }
+    #roze-text h2 {
+        font-size: 2.5em;
+        text-align: center;
+        width: 90%;
+        left: 50%;
+        top: 40%;
+    }
+    #roze-text p {
+        text-align: center;
+        font-size: 1.1em;
+        width: 80%;
+        left: 50%;
+        top: 60%;
+    }
+    #roze button {
+        height: 50px;
+        top: 80%;
+    }
+    .switchknop {
+        left: 85%;
+    }
+    .switch-tekst {
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 436px) {
+    #navbar nav {
+        list-style-type: none;
+        text-align: center;
+        margin-top: 25px;
+        margin-left: 20%;
+    }
+    #navbar a {
+        font-size: 1em;
+        margin-right: 8%;
+        font-size: 0.55em;
+    }
+    .hero-text h1 {
+        text-align: center;
+        max-width: 85%;
+        left: 50%;
+        top: 12%;
+        font-size: 1.6em;
+    }
+    .hero-text h2 {
+        text-align: center;
+        max-width: 80%;
+        top: 23%;
+        left: 50%;
+        font-size: 1.6em;
+    }
+    .hero-image {
+        height: 500px;
+    }
+    .hero-text p {
+        text-align: center;
+        max-width: 80%;
+        left: 50%;
+        top: 53%;
+        font-size: 0.7em;
+    }
+    #container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: -100px;
+        z-index: 4;
+        position: inherit;
+        font-size: 0.7em;
+    }
+    .button-intro {
+        text-align: center;
+        margin-top: -10px;
+        margin-left: 150px;
+        height: 33px;
+        width: 60px;
+    }
+    .vinkje1 {
+        margin-top: 35px;
+        margin-left: 30px;
+        height: 30px;
+        width: 50px;
+    }
+    #accordion h3 {
+        height: 110px;
+        font-size: 0.9em;
+        display: block;
+        padding: 20px;
+        width: 85.5%;
+    }
+    .button-download {
+        display: block;
+        margin-top: -18px;
+        margin-right: 15px;
+        width: 85px;
+        height: 43px;
+        text-align: center;
+    }
+    .button-workshop {
+        margin-top: -10px;
+        margin-bottom: 20px;
+        width: 80px;
+        height: 30px;
+    }
+    .button-download img {
+        float: none;
+        margin: 0;
+    }
+    #support {
+        margin-top: 80px;
+        height: 1000px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    #support h1 {
+        max-width: 90%;
+        font-size: 2em;
+        margin-left: 12%;
+    }
+    #support h2 {
+        max-width: 90%;
+        font-size: 2em;
+        margin-left: 12%;
+        margin-bottom: 50px;
+    }
+    #support h3 {
+        margin-bottom: 10px;
+    }
+    #contact1 {
+        margin-left: 9%;
+        margin-top: 20px;
+        font-size: 0.8em;
+    }
+    #contact2 {
+        float: left;
+        margin-left: 9%;
+        margin-top: 20px;
+        font-size: 0.8em;
+    }
+    #contact3 {
+        margin-left: 9%;
+        margin-top: 20px;
+        font-size: 0.8em;
+    }
+    #contact4 {
+        float: left;
+        margin-left: 9%;
+        margin-top: 20px;
+        font-size: 0.8em;
+    }
+    #roze {
+        height: 300px;
+        width: 100%;
+    }
+    #roze-text h1 {
+        text-align: center;
+        font-size: 1.7em;
+        width: 80%;
+        left: 50%;
+    }
+    #roze-text h2 {
+        font-size: 1.7em;
+        text-align: center;
+        width: 90%;
+        left: 50%;
+        top: 40%;
+    }
+    #roze-text p {
+        text-align: center;
+        font-size: 0.8em;
+        width: 90%;
+        left: 50%;
+        top: 58%;
+    }
+    #roze button {
+        font-size: 0.7em;
+        width: 180px;
+        height: 45px;
+        top: 80%;
+    }
+    .switchknop {
+        top: 38%;
+        left: 82%;
+    }
+    .switch-tekst {
+        top: 45%;
+        left: 48%;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #navbar nav {
+        list-style-type: none;
+        text-align: center;
+        margin-top: 25px;
+        margin-left: 20%;
+    }
+    #navbar a {
+        font-size: 1em;
+        margin-right: 8%;
+        font-size: 0.55em;
+    }
+    .hero-text h1 {
+        text-align: center;
+        max-width: 85%;
+        left: 50%;
+        top: 12%;
+        font-size: 1.6em;
+    }
+    .hero-text h2 {
+        text-align: center;
+        max-width: 80%;
+        top: 23%;
+        left: 50%;
+        font-size: 1.6em;
+    }
+    .hero-image {
+        height: 500px;
+    }
+    .hero-text p {
+        text-align: center;
+        max-width: 80%;
+        left: 50%;
+        top: 53%;
+        font-size: 0.7em;
+    }
+    #container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: -100px;
+        z-index: 4;
+        position: inherit;
+        font-size: 0.7em;
+    }
+    .button-intro {
+        text-align: center;
+        margin-top: -10px;
+        margin-left: 150px;
+        height: 33px;
+        width: 60px;
+    }
+    .vinkje1 {
+        margin-top: 35px;
+        margin-left: 30px;
+        height: 30px;
+        width: 50px;
+    }
+    #accordion h3 {
+        height: 110px;
+        font-size: 0.9em;
+        display: block;
+        padding: 20px;
+        width: 85.5%;
+    }
+    .button-download {
+        display: block;
+        margin-top: -18px;
+        margin-right: 15px;
+        width: 85px;
+        height: 43px;
+        text-align: center;
+    }
+    .button-workshop {
+        margin-top: -10px;
+        margin-bottom: 20px;
+        width: 80px;
+        height: 30px;
+    }
+    .button-download img {
+        float: none;
+        margin: 0;
+    }
+    #support {
+        margin-top: 80px;
+        height: 1000px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    #support h1 {
+        max-width: 90%;
+        font-size: 2em;
+        margin-left: 12%;
+    }
+    #support h2 {
+        max-width: 90%;
+        font-size: 2em;
+        margin-left: 12%;
+        margin-bottom: 50px;
+    }
+    #support h3 {
+        margin-bottom: 10px;
+    }
+    #contact1 {
+        margin-left: 9%;
+        margin-top: 20px;
+        font-size: 0.8em;
+    }
+    #contact2 {
+        float: left;
+        margin-left: 9%;
+        margin-top: 20px;
+        font-size: 0.8em;
+    }
+    #contact3 {
+        margin-left: 9%;
+        margin-top: 20px;
+        font-size: 0.8em;
+    }
+    #contact4 {
+        float: left;
+        margin-left: 9%;
+        margin-top: 20px;
+        font-size: 0.8em;
+    }
+    #roze {
+        height: 300px;
+        width: 100%;
+    }
+    #roze-text h1 {
+        text-align: center;
+        font-size: 1.7em;
+        width: 80%;
+        left: 50%;
+    }
+    #roze-text h2 {
+        font-size: 1.7em;
+        text-align: center;
+        width: 90%;
+        left: 50%;
+        top: 40%;
+    }
+    #roze-text p {
+        text-align: center;
+        font-size: 0.8em;
+        width: 90%;
+        left: 50%;
+        top: 58%;
+    }
+    #roze button {
+        font-size: 0.7em;
+        width: 180px;
+        height: 45px;
+        top: 80%;
+    }
+    .switchknop {
+        top: 38%;
+        left: 82%;
+    }
+    .switch-tekst {
+        top: 45%;
+        left: 48%;
+        font-size: 0.8em;
+    }
+}

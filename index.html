@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wholetask</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/video-js.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.4.1.js"> </script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/sketch.js"></script>
+
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <div id="navbar">
+                <img id="logo1" src="img/Group 10@2x.png" alt="logo" />
+                <img id="logo2" src="img/logo-wit@2x.png" alt="logo-wit" />
+                <nav>
+
+                    <a href="#">
+                        OVER ONS
+                    </a>
+                    <a href="#">
+                        LESMATERIAAL
+                    </a>
+                    <a href="#">
+                        CONTACT
+                    </a>
+
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="hero-image">
+                <div class="color-overlay"></div>
+                <div class="hero-text">
+                    <h1>Van beginner naar expert</h1>
+                    <h2>Het lesmateriaal brengt je verder</h2>
+                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem
+                        malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id
+                        elit
+                        non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                        dolor
+                        auctor.</p>
+                </div>
+            </div>
+
+            <div id="container">
+
+                <p id="playlist">Playlist</p>
+
+                <div id="accordion">
+
+                    <div class="container2">
+                        <h3>
+                            <img src="img/accordion-dicht@2x.png" class="acc-dicht" alt="acc dicht">
+                            <img src="img/Path 14@2x.png" class="acc-dicht2" alt="acc dicht">
+                            <img src="img/accordion-open@2x.png" class="acc-open" alt="acc open">
+                            Algemene introductie
+                            <button class="vinkje1"></button>
+                            <button class="acc-button button-intro">INTRO</button>
+                        </h3>
+
+                        <div class="videoContainer">
+                            <p class="videoTitle">Algemene introductie</p>
+                            <video class="video-js" id="video1" data-setup='{"fluid": true}' mute>
+                                <source src="video/filmpje.MOV" type="video/mp4">
+                            </video>
+                            <button class="toggle"></button>
+                            <button class="rewind"></button>
+                            <button class="vinkje2"></button>
+                            <div class="modal myModal">
+                                <div class="modal-content">
+                                    <a href="javascript:;" class="close"> X </a>
+                                    <p>Je hebt deze tutorial gekeken!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="container2">
+                        <h3>
+                            <img src="img/accordion-dicht@2x.png" class="acc-dicht" alt="acc dicht">
+                            <img src="img/Path 14@2x.png" class="acc-dicht2" alt="acc dicht">
+                            <img src="img/accordion-open@2x.png" class="acc-open" alt="acc open">
+                            Workshop 1: Kleuren met code
+                            <button class="vinkje1"></button>
+                            <button class="acc-button button-workshop">WORKSHOP</button>
+                            <button class="button-download">
+                                <img src="img/download@2x.png" style="margin-right:5px;" alt="download">
+                                <p>DOWNLOADS</p>
+                            </button>
+                        </h3>
+
+                        <div class="videoContainer">
+                            <p class="videoTitle">Workshop 1: Kleuren met code</p>
+                            <video class="video-js" id="video2" data-setup='{"fluid": true}' mute>
+                                <source src="video/filmpje.MOV" type="video/mp4">
+                            </video>
+                            <button class="toggle"></button>
+                            <button class="rewind"></button>
+                            <button class="vinkje2"></button>
+                            <div class="modal myModal">
+                                <div class="modal-content">
+                                    <a href="javascript:;" class="close"> X </a>
+                                    <p>Je hebt deze tutorial gekeken!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="container2">
+                        <h3>
+                            <img src="img/accordion-dicht@2x.png" class="acc-dicht" alt="acc dicht">
+                            <img src="img/Path 14@2x.png" class="acc-dicht2" alt="acc dicht">
+                            <img src="img/accordion-open@2x.png" class="acc-open" alt="acc open">
+                            Workshop 2: Vormen maken
+                            <button class="vinkje1"></button>
+                            <button class="acc-button button-workshop">WORKSHOP</button>
+                        </h3>
+
+                        <div class="videoContainer">
+                            <p class="videoTitle">Workshop 2: Vormen maken</p>
+                            <video class="video-js" id="video3" data-setup='{"fluid": true}' mute>
+                                <source src="video/filmpje.MOV" type="video/mp4">
+                            </video>
+                            <button class="toggle"></button>
+                            <button class="rewind"></button>
+                            <button class="vinkje2"></button>
+                            <div class="modal myModal">
+                                <div class="modal-content">
+                                    <a href="javascript:;" class="close"> X </a>
+                                    <p>Je hebt deze tutorial gekeken!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="container2">
+                        <h3>
+                            <img src="img/accordion-dicht@2x.png" class="acc-dicht" alt="acc dicht">
+                            <img src="img/Path 14@2x.png" class="acc-dicht2" alt="acc dicht">
+                            <img src="img/accordion-open@2x.png" class="acc-open" alt="acc open">
+                            Workshop 3: Beweging
+                            <button class="vinkje1"></button>
+                            <button class="acc-button button-workshop">WORKSHOP</button>
+                            <button class="button-download">
+                                <img src="img/download@2x.png" style="margin-right:5px;" alt="download">
+                                <p>DOWNLOADS</p>
+                            </button>
+                        </h3>
+
+                        <div class="videoContainer">
+                            <p class="videoTitle">Workshop 3: Beweging</p>
+                            <video class="video-js" id="video4" data-setup='{"fluid": true}' mute>
+                                <source src="video/filmpje.MOV" type="video/mp4">
+                            </video>
+                            <button class="toggle"></button>
+                            <button class="rewind"></button>
+                            <button class="vinkje2"></button>
+                            <div class="modal myModal">
+                                <div class="modal-content">
+                                    <a href="javascript:;" class="close"> X </a>
+                                    <p>Je hebt deze tutorial gekeken!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="container2">
+                        <h3>
+                            <img src="img/accordion-dicht@2x.png" class="acc-dicht" alt="acc dicht">
+                            <img src="img/Path 14@2x.png" class="acc-dicht2" alt="acc dicht">
+                            <img src="img/accordion-open@2x.png" class="acc-open" alt="acc open">
+                            Workshop 4: Variabelen gebruiken
+                            <button class="vinkje1"></button>
+                            <button class="acc-button button-workshop">WORKSHOP</button>
+                        </h3>
+
+                        <div class="videoContainer">
+                            <p class="videoTitle">Workshop 4: Variabelen gebruiken</p>
+                            <video class="video-js" id="video5" data-setup='{"fluid": true}' mute>
+                                <source src="video/filmpje.MOV" type="video/mp4">
+                            </video>
+                            <button class="toggle"></button>
+                            <button class="rewind"></button>
+                            <button class="vinkje2"></button>
+                            <div class="modal myModal">
+                                <div class="modal-content">
+                                    <a href="javascript:;" class="close"> X </a>
+                                    <p>Je hebt deze tutorial gekeken!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="support">
+                <h3>Support</h3>
+                <h1>Kom je er niet uit?</h1>
+                <h2>Wij helpen je graag verder</h2>
+
+                <div id="contact1">
+                    <img src="img/contact-img@2x.png" alt="Klaartje Klaassen" />
+                    <h4>Klaartje Klaassen</h4>
+                    <h5>Hoofd contactpersoon</h5>
+                    <button href="#">EMAIL </button>
+                </div>
+
+                <div id="contact2">
+                    <img src="img/contact-img-1@2x.png" alt="Klaartje Klaassen" />
+                    <h4>Klaartje Klaassen</h4>
+                    <h5>Hoofd contactpersoon</h5>
+                    <button href="#">EMAIL </button>
+                </div>
+
+                <div id="contact3">
+                    <img src="img/contact-img-2@2x.png" alt="Klaartje Klaassen" />
+                    <h4>Klaartje Klaassen</h4>
+                    <h5>Hoofd contactpersoon</h5>
+                    <button href="#">EMAIL </button>
+                </div>
+
+                <div id="contact4">
+                    <img src="img/contact-img-3@2x.png" alt="Klaartje Klaassen" />
+                    <h4>Klaartje Klaassen</h4>
+                    <h5>Hoofd contactpersoon</h5>
+                    <button href="#">EMAIL </button>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div id="roze">
+                <div class="color-overlay2"></div>
+                <div id="roze-text">
+                    <h1>Klaar voor de </h1>
+                    <h2>volgende uitdaging?</h2>
+                    <p>In ons expertprogramma vind je lessen voor gevorderen</p>
+                </div>
+
+                <button id="knop" href="#">
+                    <h1>KOM MAAR OP</h1>
+                </button>
+            </div>
+        </main>
+
+        <footer>
+
+            <div class="switchknop"></div>
+            <p class="switch-tekst">SWITCH THEME</p>
+
+        </footer>
+
+</body>
+
+</html>
